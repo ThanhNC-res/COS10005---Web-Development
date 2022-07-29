@@ -1,0 +1,11 @@
+<div id="div-ads">
+<p>
+<a href="www.reddit.com">Welcome to Reddit!</a>
+</p>
+</div>
+/*CSS Selector*/
+#div-ads {
+	float:left;
+	position: absolute; 
+	bottom: 0px;
+}

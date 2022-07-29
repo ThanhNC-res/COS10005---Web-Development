@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Work</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    <link href="desktop.css" rel="stylesheet" media="only screen and (min-width: 680px)">
+    <link href="mobile.css" rel="stylesheet" media="only screen and (max-width: 680px)">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <nav class="menu-activea">
+  <h1>NAVBAR</h1>
+  <ul>
+    <li><a href="home.html">HOME</a></li>
+    <li><a href="work.html">WORK</a></li>
+    <li><a href="favourite.html">FAVOURITE</a></li>
+  </ul>
+</nav>
+<main>
+   <section class="1" style="max-width:1080px">
+   <br><br><br>
+   <div class="workinfo">
+    <h1 style="text-align:center">&larr; CURRENT WORK</h1>
+    <h2 style="text-align:center">Student at</h2>
+    <br>
+    <img src="img/Logo_of_Swinburne_University_of_Technology.png" alt="me" style="max-width:400px;margin-left:30%">
+  	<h3 style="text-align:center">SWINBURNE UNIVERSITY OF TECHNOLOGY</h3>
+    <P style="font-size:18px; text-align:center; color:#999"><strong>Swinburne</strong> is a world-ranked university leading the way in innovation, industry engagement and social inclusion. Our education, high-quality research and industry partnerships create positive change for students, staff and the community.</P><br/>
+    <h3>Courses in progress:</h3>
+   	<ul>
+    	<li>Web Development - COS1005</li>
+        <li>Global Citizen - Thunderbolt</li>
+        <li>Vovinam class - Vo 1</li> 
+    </ul>
+   <br/>
+     </div>
+     <div class="scheduleboard">
+     	<h3 style="text-align:center">My schedule at Swinburne</h3>
+     	<table border="1">
+        	<tr>
+            	<th></th>
+                <th> Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr>
+            `	<th>Morning</th>
+            	<td>Global citizen<br/>from 7h30 to 10h00</td>
+                <td>Global citizen<br/>from 7h30 to 10h00</td>
+                <td>Global citizen<br/>from 7h30 to 10h00</td>
+                <td>Global citizen<br/>from 7h30 to 10h00</td>
+                <td>Global citizen<br/>from 7h30 to 10h00</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+            	<th>Afternoon</th>
+                <td></td>
+                <td>Vovinam class<br/>from 1h00 to 3h00</td>
+                <td>IT class - Web development</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+     </div>
+  </section>
+</main>
+<script>
+    (function() {
+
+  var nav = $('nav'),
+    menu = $('nav h1'),
+    main = $('main'),
+  	open = false,
+  	hover = false;
+
+  menu.on('click', function() {
+		open = !open ? true : false;
+    nav.toggleClass('menu-active');
+    main.toggleClass('menu-active');
+    nav.removeClass('menu-hover');
+    main.removeClass('menu-hover');
+    console.log(open);
+  });
+  menu.hover( 
+    function() {
+      if (!open) {
+      	nav.addClass('menu-hover');
+      	main.addClass('menu-hover');
+      }
+    }, function() {
+      nav.removeClass('menu-hover');
+      main.removeClass('menu-hover');
+    }
+  );
+
+})();
+    
+</script>
+</body>
+</html>

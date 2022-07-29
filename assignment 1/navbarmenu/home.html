@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    <link href="desktop.css" rel="stylesheet" media="only screen and (min-width: 680px)">
+    <link href="mobile.css" rel="stylesheet" media="only screen and (max-width: 680px)">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <nav class="menu-activea">
+  <h1>NAVBAR</h1>
+  <ul>
+    <li><a href="home.html">HOME</a></li>
+    <li><a href="work.html">WORK</a></li>
+    <li><a href="favourite.html">FAVOURITE</a></li>
+  </ul>
+</nav>
+<main>
+   <section class="1">
+   <br><br><br>
+   <div class="aboutme">
+    <h1>&larr; ABOUT ME</h1>
+    <br>
+    <img src="img/me.jpg" alt="me" style="max-width:400px">
+    <p style="font-size:16px; color: #999">Just a liitle boy in a small rich tranditional country in South-East Asia - VIET NAM. It is a paradisematic country, in which roasted parts of sentences fly into your mouth</p>
+     <ul>
+    <li><strong style=" font-family:'Arial Black', Gadget, sans-serif; color: #996; padding-right: 110px">Name:</strong>Ngo Cong Thanh</li>
+    <li><strong style=" font-family:'Arial Black', Gadget, sans-serif; color: #996; padding-right: 40px">Date of birth:</strong>28/10/2002</li>
+    <li><strong style=" font-family:'Arial Black', Gadget, sans-serif; color: #996; padding-right: 90px">Address:</strong>Mai Dich, Cau Giay District, Ha Noi, Viet Nam</li>
+    <li><strong style=" font-family:'Arial Black', Gadget, sans-serif; color: #996; padding-right: 120px">Email:</strong>jerryngocongthanh@gmail.com</li>
+    <li><strong style=" font-family:'Arial Black', Gadget, sans-serif; color: #996; padding-right: 110px">Phone:</strong>0978 856 303</li>
+    </ul>
+   
+     </div>
+     <br/>
+      <h1>&larr; MY HOMETOWN</h1>
+      <br/>
+     <img src="img/thitranDL.jpg" alt="DL" style="max-width:650px" >
+      <br/>
+     <h2 style="text-align:center; font-size:24px">ĐÔ LƯƠNG TOWN<br/>NGHỆ AN PROVINCE</h2>
+     <p style="font-size:16px; color:#999">It's a small town in the center of Nghe An province with many beautiful scenery, tranditional cusine and attractive destinations. If you have a chance, you should try to visit it.</p>
+      <h3>Gallery</h3>
+     <img src="img/dac-san-nghe-an-chao-luon-vinh.jpg" alt="sup luon" style="max-width:300px">
+      <img src="img/dac-san-nghe-an-tuong-nam-dan.jpg" alt="tung nam dan" style="max-width:300px">
+     <img src="img/pr-5-da-do-luong-tiem-nang-do-luongdocx-1581603666882.jpeg" alt="toan canh" style="max-width:300px">
+      <img src="img/pr-5-da-do-luong.jpeg" alt="toan canh" style="max-width:300px">
+      <br/>
+      
+      <footer>
+      	<h2 style="font-family:'Arial Black', Gadget, sans-serif; font-size:24px;text-align: center; color:#996">Contact me</h2>
+        <div class="socialicon">
+        	<a href="https://www.facebook.com/profile.php?id=100006286366243" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/thanhngocong/" class="fa fa-instagram"></a>
+            <a href="https://www.reddit.com/user/kepptchalot" class="fa fa-reddit"></a>
+        </div>
+        
+      </footer>
+  </section>
+</main>
+<br/>
+<script>
+    (function() {
+
+  var nav = $('nav'),
+    menu = $('nav h1'),
+    main = $('main'),
+  	open = false,
+  	hover = false;
+
+  menu.on('click', function() {
+		open = !open ? true : false;
+    nav.toggleClass('menu-active');
+    main.toggleClass('menu-active');
+    nav.removeClass('menu-hover');
+    main.removeClass('menu-hover');
+    console.log(open);
+  });
+  menu.hover( 
+    function() {
+      if (!open) {
+      	nav.addClass('menu-hover');
+      	main.addClass('menu-hover');
+      }
+    }, function() {
+      nav.removeClass('menu-hover');
+      main.removeClass('menu-hover');
+    }
+  );
+
+})();
+    
+</script>
+</body>
+</html>

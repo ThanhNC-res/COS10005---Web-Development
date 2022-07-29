@@ -1,0 +1,62 @@
+/* CSS Document */
+main {
+	float:left;
+	width: 65%
+}
+aside {
+	float: right;
+	width: 17%;
+	font-size: 8px;
+	font-style: italic;
+	color: black;
+	background-color: lightgray
+}
+footer {
+	clear: both;
+	color: white;
+	text-align: center;
+	background-color: navy;
+}
+header {
+	color: white;
+	background-color: navy;text-align: center; font-size: 500%
+}
+nav {
+	background-color: #FFF;
+	float: left;
+	list-style-type: none; 
+	padding: 10px;
+	margin: 10px;
+	width:auto;
+}
+article {
+	color: black;
+	background-color: #FFF;
+}
+.ad {
+	color: black;
+	background-color: lightblue
+}
+a {
+	float: left;
+	background-position: center;
+	text-align: center;
+	width: 60%;
+	text-decoration: none;
+	color: white;
+	background-color: blue;
+	padding-bottom: 0.2em; 
+	padding-top: 0.2em;
+	padding-left: 0.6em;
+	padding-right: 0.6em
+}
+a:hover{
+	background-color: orange;
+}
+h3 {
+	text-shadow: #aaa 2px 2px 2px
+}
+fieldset {
+	border-color: #0F0;
+	border-style: double;
+}
